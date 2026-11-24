@@ -676,12 +676,12 @@ function renderAdminAll(){renderRecords();renderAdminWords();renderSettings();re
 
 /* ===== 前后台切换 ===== */
 function showFront(){
-  $('#adminApp').style.display='none';$('#frontApp').style.display='';
+  $('#adminApp').style.display='none';$('#frontApp').style.display='block';
   renderReady();
 }
 function enterAdmin(){
   $('#loginMask').classList.remove('on');
-  $('#frontApp').style.display='none';$('#adminApp').style.display='';
+  $('#frontApp').style.display='none';$('#adminApp').style.display='block';
   renderAdminAll();
 }
 function switchTab(name){
